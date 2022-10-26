@@ -10,7 +10,8 @@
 - [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
 - [TailwindCSS](https://tailwindcss.com)
-- [React Router v5](https://reactrouter.com/en/main)
+- [React Router v6](https://reactrouter.com/en/main)
+- [Ethers.js](https://docs.ethers.io/v5) 
 - [Wagmi](https://wagmi.sh) 
 - [WalletConnect - Web3Modal](https://github.com/WalletConnect/web3modal/blob/V2/docs/react.md) 
 
