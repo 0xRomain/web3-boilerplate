@@ -7,6 +7,7 @@
 
 ## Stacks
 
+- [Vite](https://vitejs.dev)
 - [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
 - [TailwindCSS](https://tailwindcss.com)
@@ -22,7 +23,7 @@
 
 ## Steps 
 
-- Init the react app with typescript: `npx create-react-app@latest my-app --template typescript`
+- Init the react app with typescript using Vite: `npm create vite@latest dapp -- --template react-ts`
 - Install ESLint: `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript`
 - Install Tailwind: 
     - `npm install -D tailwindcss postcss autoprefixer`
@@ -31,8 +32,12 @@
 - Install Wagmi: `npm i wagmi ethers`
 - Install web3modal: `npm install @web3modal/react @web3modal/ethereum ethers`
     - Create env file: `touch .env`
-    - Define the wallect connect project Id: `REACT_APP_WALLECT_CONNECT_PROJECT_ID`
+    - Define the wallect connect project Id: `VITE_WALLECT_CONNECT_PROJECT_ID`
 
 ## VSCode useful plugins
 
 - Tailwind CSS IntelliSense: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+
+
+npm create vite@latest my-vue-app --template vue
+npm create vite@latest viite --template react-ts

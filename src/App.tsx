@@ -8,7 +8,7 @@ import { Web3Modal } from '@web3modal/react';
 import type { ConfigOptions } from '@web3modal/core';
 
 const config: ConfigOptions = {
-  projectId: `${process.env.REACT_APP_WALLECT_CONNECT_PROJECT_ID}`,
+  projectId: `${import.meta.env.VITE_WALLECT_CONNECT_PROJECT_ID}`,
   theme: 'dark',
   accentColor: 'default',
   ethereum: {
