@@ -11,6 +11,8 @@
 - TypeScript 
 - Tailwind
 - React Router
+- [Wagmi](https://wagmi.sh) 
+- [WalletConnect - Web3Modal](https://github.com/WalletConnect/web3modal) 
 
 ## Dev stacks
 
@@ -25,6 +27,10 @@
     - `npm install -D tailwindcss postcss autoprefixer`
     - `npx tailwindcss init -p`
 - Install React Router: `npm install react-router-dom@6`
+- Install Wagmi: `npm i wagmi ethers`
+- Install web3modal: `npm install @web3modal/react @web3modal/ethereum ethers`
+    - Env variable: `cp .env.example .env`
+    - Add your wallect connet project id
 
 ## VSCode useful plugins
 

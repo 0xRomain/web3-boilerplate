@@ -4,6 +4,17 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import { Web3Modal } from '@web3modal/react';
+import type { ConfigOptions } from '@web3modal/core';
+
+const config: ConfigOptions = {
+  projectId: `${process.env.REACT_APP_WALLECT_CONNECT_PROJECT_ID}`,
+  theme: 'dark',
+  accentColor: 'default',
+  ethereum: {
+    appName: 'web3-boilerplate',
+  },
+};
 
 function App() {
   return (
@@ -16,6 +27,7 @@ function App() {
           <Route path='about' element={<About />} />
         </Routes>
       </header>
+      <Web3Modal config={config} />
     </div>
   );
 }
