@@ -1,12 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
+import Logo from '../components/Logo';
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+import Menu from '../components/Menu';
 
 function Home() {
   return (
-    <div className='App-content'>
-      <h2 className='text-2xl font-bold'>HOME</h2>
-      <Link to='/about'>About</Link>
-    </div>
+    <>
+      <Menu />
+      <Hero />
+      <Logo />
+      <Content />
+      <Footer />
+    </>
   );
 }
 

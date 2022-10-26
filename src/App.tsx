@@ -4,23 +4,15 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Hero from './components/Hero';
-import Logo from './components/Logo';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import Menu from './components/Menu';
+import Services from './pages/Services';
 
 function App() {
   return (
     <>
-      <Menu />
-      <Hero />
-      <Logo />
-      <Content />
-      <Footer />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
+        <Route path='services' element={<Services />} />
       </Routes>
     </>
   );

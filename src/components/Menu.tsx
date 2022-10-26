@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Bars3Icon,
   ChatBubbleBottomCenterTextIcon,
@@ -49,7 +49,7 @@ export default function Menu() {
         <Popover className='relative bg-white'>
           <div className='mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
-              <a href='#'>
+              <a href='/'>
                 <span className='sr-only'>Your Company</span>
                 <img
                   className='h-8 w-auto sm:h-10'
@@ -64,6 +64,17 @@ export default function Menu() {
                 <Bars3Icon className='h-6 w-6' aria-hidden='true' />
               </Popover.Button>
             </div>
+            <Link to='/' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+              Home
+            </Link>
+            <Link to='/about' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+              about
+            </Link>
+            <Link
+              to='/services'
+              className='text-base font-medium text-gray-500 hover:text-gray-900'>
+              Services
+            </Link>
             <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
               <Popover className='relative'>
                 {({ open }) => (
@@ -115,27 +126,17 @@ export default function Menu() {
                   </>
                 )}
               </Popover>
-
-              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                Pricing
-              </a>
-              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                Partners
-              </a>
-              <a href='#' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-                Company
-              </a>
             </Popover.Group>
             <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0'>
               <a
                 href='#'
                 className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
-                Sign in
+                Contact us
               </a>
               <a
                 href='#'
                 className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700'>
-                Sign up
+                Connect your Wallet
               </a>
             </div>
           </div>
@@ -171,9 +172,9 @@ export default function Menu() {
                   <div className='mt-6'>
                     <nav className='grid grid-cols-1 gap-7'>
                       {solutions.map(item => (
-                        <a
+                        <Link
                           key={item.name}
-                          href={item.href}
+                          to={item.href}
                           className='-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50'>
                           <div className='flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white'>
                             <item.icon className='h-6 w-6' aria-hidden='true' />
@@ -181,7 +182,7 @@ export default function Menu() {
                           <div className='ml-4 text-base font-medium text-gray-900'>
                             {item.name}
                           </div>
-                        </a>
+                        </Link>
                       ))}
                     </nav>
                   </div>
