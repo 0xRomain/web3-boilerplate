@@ -21,3 +21,10 @@
 
 - Init the react app with typescript: `npx create-react-app@latest my-app --template typescript`
 - Install ESLint: `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript`
+- Install Tailwind: 
+    - `npm install -D tailwindcss postcss autoprefixer`
+    - `npx tailwindcss init -p`
+
+## VSCode useful plugins
+
+- Tailwind CSS IntelliSense: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
