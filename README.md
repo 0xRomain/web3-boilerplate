@@ -12,6 +12,12 @@
 - Tailwind
 - React Router
 
+## Dev stacks
+
+- ESLint
+- Prettier
+
 ## Steps 
 
 - Init the react app with typescript: `npx create-react-app@latest my-app --template typescript`
+- Install ESLint: `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript`
