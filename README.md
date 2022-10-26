@@ -7,17 +7,17 @@
 
 ## Stacks
 
-- ReactJS 
-- TypeScript 
-- Tailwind
-- React Router
+- [ReactJS](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [TailwindCSS](https://tailwindcss.com)
+- [React Router v5](https://reactrouter.com/en/main)
 - [Wagmi](https://wagmi.sh) 
-- [WalletConnect - Web3Modal](https://github.com/WalletConnect/web3modal) 
+- [WalletConnect - Web3Modal](https://github.com/WalletConnect/web3modal/blob/V2/docs/react.md) 
 
 ## Dev stacks
 
-- ESLint
-- Prettier
+- [ESLint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
 ## Steps 
 
@@ -29,8 +29,8 @@
 - Install React Router: `npm install react-router-dom@6`
 - Install Wagmi: `npm i wagmi ethers`
 - Install web3modal: `npm install @web3modal/react @web3modal/ethereum ethers`
-    - Env variable: `cp .env.example .env`
-    - Add your wallect connet project id
+    - Create env file: `touch .env`
+    - Define the wallect connect project Id: `REACT_APP_WALLECT_CONNECT_PROJECT_ID`
 
 ## VSCode useful plugins
 
