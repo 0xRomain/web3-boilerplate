@@ -37,7 +37,3 @@
 ## VSCode useful plugins
 
 - Tailwind CSS IntelliSense: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
-
-
-npm create vite@latest my-vue-app --template vue
-npm create vite@latest viite --template react-ts
