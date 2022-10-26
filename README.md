@@ -24,6 +24,7 @@
 - Install Tailwind: 
     - `npm install -D tailwindcss postcss autoprefixer`
     - `npx tailwindcss init -p`
+- Install React Router: `npm install react-router-dom@6`
 
 ## VSCode useful plugins
 
