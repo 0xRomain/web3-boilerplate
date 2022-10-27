@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
     "@types/node": "^16.18.0",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "@web3modal/ethereum": "^2.0.0-alpha.8",
     "@web3modal/react": "^2.0.0-alpha.8",
     "ethers": "^5.7.2",
+    "heroicons-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2"
