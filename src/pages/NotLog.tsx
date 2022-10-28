@@ -1,7 +1,7 @@
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import { XCircleIcon } from '@heroicons/react/20/solid';
-import { redirect, Route, Routes, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAccount, Web3Modal } from '@web3modal/react';
 import { Fragment, useEffect, useState } from 'react';
 
