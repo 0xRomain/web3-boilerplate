@@ -21,19 +21,22 @@ const tools = [
   },
   {
     name: 'Web3modal',
-    description: 'Web3Modal is a versatile library that makes it super easy to connect users with your Dapp and start interacting with the blockchain.',
+    description:
+      'Web3Modal is a versatile library that makes it super easy to connect users with your Dapp and start interacting with the blockchain.',
     href: 'https://github.com/WalletConnect/web3modal/blob/V2/docs/react.md',
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
     name: 'Vite',
-    description: " Instant Server Start · Lightning Fast HMR · Rich Features · Optimized Build · Universal Plugins",
+    description:
+      ' Instant Server Start · Lightning Fast HMR · Rich Features · Optimized Build · Universal Plugins',
     href: 'https://vitejs.dev',
     icon: ChatBubbleLeftRightIcon,
   },
   {
     name: 'Ethers',
-    description: "The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem",
+    description:
+      'The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem',
     href: 'https://docs.ethers.io/v5',
     icon: QuestionMarkCircleIcon,
   },
@@ -64,19 +67,19 @@ function Menu() {
                 <span className='sr-only'>Open menu</span>
                 <Bars3Icon className='h-6 w-6' aria-hidden='true' />
               </Popover.Button>
-            </div> 
+            </div>
             <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
-            <Link to='/' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Home
-            </Link>
-            <Link to='/about' className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              About
-            </Link>
-            <Link
-              to='/dashboard'
-              className='text-base font-medium text-gray-500 hover:text-gray-900'>
-              Dashboard
-            </Link>
+              <Link to='/' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                Home
+              </Link>
+              <Link to='/about' className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                About
+              </Link>
+              <Link
+                to='/dashboard'
+                className='text-base font-medium text-gray-500 hover:text-gray-900'>
+                Dashboard
+              </Link>
               <Popover className='relative'>
                 {({ open }) => (
                   <>
@@ -140,7 +143,6 @@ function Menu() {
                 Connect your Wallet
               </a> */}
               {account.isConnected === true ? <p>{account.address}</p> : <ConnectButton />}
-
             </div>
           </div>
 
@@ -155,7 +157,6 @@ function Menu() {
             <Popover.Panel
               focus
               className='absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden'>
-                
               <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
                 <div className='px-5 pt-5 pb-6'>
                   <div className='flex items-center justify-between'>
@@ -173,27 +174,36 @@ function Menu() {
                       </Popover.Button>
                     </div>
                   </div>
-                   <div className='py-6 px-5'>
-                  <div className='grid grid-cols-2 gap-4'>
-                    <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                      Home
-                    </a>
-                    <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                      About
-                    </a>
-                    <a href='#' className='text-base font-medium text-gray-900 hover:text-gray-700'>
-                      Dashboard
-                    </a>
+                  <div className='py-6 px-5'>
+                    <div className='grid grid-cols-2 gap-4'>
+                      <a
+                        href='#'
+                        className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                        Home
+                      </a>
+                      <a
+                        href='#'
+                        className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                        About
+                      </a>
+                      <a
+                        href='#'
+                        className='text-base font-medium text-gray-900 hover:text-gray-700'>
+                        Dashboard
+                      </a>
+                    </div>
+                    <div className='mt-6'>
+                      <a
+                        href='#'
+                        className='flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r'>
+                        {account.isConnected === true ? (
+                          <p>{account.address}</p>
+                        ) : (
+                          <ConnectButton />
+                        )}
+                      </a>
+                    </div>
                   </div>
-                  <div className='mt-6'>
-                    <a
-                      href='#'
-                      className='flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r'>
-                      {account.isConnected === true ? <p>{account.address}</p> : <ConnectButton />}
-                    </a>
-                    
-                  </div>
-                </div>
                   <div className='mt-6'>
                     <nav className='grid grid-cols-1 gap-7'>
                       {tools.map(item => (
@@ -221,5 +231,4 @@ function Menu() {
   );
 }
 
-
-export default Menu
+export default Menu;

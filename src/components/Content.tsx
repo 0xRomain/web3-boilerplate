@@ -73,7 +73,7 @@ export default function Content() {
                 <div>
                   <div className='mt-6'>
                     <h2 className='text-3xl font-bold tracking-tight text-gray-900'>
-                    Semper curabitur ullamcorper posuere
+                      Semper curabitur ullamcorper posuere
                     </h2>
                     <p className='mt-4 text-lg text-gray-500'>
                       Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum

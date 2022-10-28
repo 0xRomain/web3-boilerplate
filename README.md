@@ -18,8 +18,6 @@
 - [Heroicons](https://heroicons.com/)
 - [Headlessui](https://headlessui.com/)
 
-https://headlessui.com/
-
 ## Dev stacks
 
 - [ESLint](https://eslint.org)
@@ -37,6 +35,7 @@ https://headlessui.com/
 - Install web3modal: `npm install @web3modal/react @web3modal/ethereum ethers`
   - Create env file: `touch .env`
   - Define the wallect connect project Id: `VITE_WALLECT_CONNECT_PROJECT_ID`
+- Install Heroicons: `npm i `
 
 ## VSCode useful plugins
 
