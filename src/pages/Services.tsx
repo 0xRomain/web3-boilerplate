@@ -1,15 +1,13 @@
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
-import Content from '../components/Content';
 
-function About() {
+function Services() {
   return (
     <>
       <Menu />
-      <Content />
+      <h1 className='font-bold text-center py-11'>You are on the Services Pages</h1>
       <Footer />
     </>
   );
 }
-
-export default About;
+export default Services;
