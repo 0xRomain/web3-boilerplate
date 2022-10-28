@@ -36,6 +36,7 @@
   - Create env file: `touch .env`
   - Define the wallect connect project Id: `VITE_WALLECT_CONNECT_PROJECT_ID`
 - Install Heroicons: `npm i heroicons`
+- Install Headless UI : `npm i @headlessui/react@latest`
 
 ## VSCode useful plugins
 
