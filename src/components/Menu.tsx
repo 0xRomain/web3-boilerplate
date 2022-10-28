@@ -143,8 +143,12 @@ function Menu() {
                 className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700'>
                 Connect your Wallet
               </a> */}
-           
-              {account.isConnected === true ? <p>{truncateAddress(account.address)}</p> : <ConnectButton />}
+
+              {account.isConnected === true ? (
+                <p>{truncateAddress(account.address)}</p>
+              ) : (
+                <ConnectButton />
+              )}
             </div>
           </div>
 

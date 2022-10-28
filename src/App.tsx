@@ -21,6 +21,7 @@ const config: ConfigOptions = {
 
 function App() {
   const { account, isReady } = useAccount();
+
   return (
     <>
       <Routes>
