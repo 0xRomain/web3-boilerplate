@@ -40,16 +40,9 @@ function Dashboard() {
   console.log(account.isConnected);
   
 
-  useEffect(() => {
-
-    useAccount();
-    if (!account.isConnected) {
-      navigate('/notlog');
-    } else{navigate('/dashboard');}
-
-    console.log(account.isConnected);
-    
-  },[]);
+  if (!account.isConnected) {
+    navigate('/notlog');
+  }
 
   
   return (

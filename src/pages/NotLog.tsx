@@ -9,17 +9,12 @@ function NotLog() {
 
   const navigate = useNavigate(); 
   const { account, isReady } = useAccount();
+  console.log(account);
 
-
-  useEffect(() => {
-
-    if (account.isConnected) {
-      navigate('/dashboard');
-    } else{navigate('/notlog');}
-
-    console.log(account.isConnected);
-    
-  },[]);
+  if (account.isConnected) {
+    navigate('/dashboard');
+  }
+  
 
   return (
     <>
